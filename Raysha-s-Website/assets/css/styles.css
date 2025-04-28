@@ -167,7 +167,6 @@ main {
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     flex-direction: column; /* Stack content vertically */
-    display: flex; /* Flexbox for centering */
 }
 
 /* Modal Content */
@@ -175,6 +174,7 @@ main {
     max-width: 80%; /* Limit the width of the image */
     max-height: 80%; /* Limit the height of the image */
     border-radius: 10px; /* Optional: Rounded corners for the image */
+    display: block; /* Ensure the image is visible by default */
 }
 
 /* Close Button */
