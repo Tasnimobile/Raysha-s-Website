@@ -129,6 +129,64 @@ main {
 }
 
 
+/* Styles for images inside .section-box */
+/* Style for the gallery container */
+.gallery {
+    display: flex;
+    gap: 10px; /* Space between images */
+    justify-content: center;
+    flex-wrap: wrap; /* Allow images to wrap to the next row if needed */
+}
+
+/* Style for gallery images */
+.gallery-item {
+    width: 150px; /* Set a fixed width for the images */
+    height: 100px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image fits within the box without distortion */
+    border: 2px solid #ccc; /* Optional: Add a border around the images */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+/* Hover effect for gallery images */
+.gallery-item:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Ensures the modal is positioned relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 1000; /* Ensures the modal is above all other elements */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack content vertically */
+    display: flex; /* Flexbox for centering */
+}
+
+/* Modal Content */
+.modal-content {
+    max-width: 80%; /* Limit the width of the image */
+    max-height: 80%; /* Limit the height of the image */
+    border-radius: 10px; /* Optional: Rounded corners for the image */
+}
+
+/* Close Button */
+.close {
+    position: absolute; /* Position relative to the modal */
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 /* Footer styles */
 footer {

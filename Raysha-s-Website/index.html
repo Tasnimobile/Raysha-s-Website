@@ -11,9 +11,12 @@
 
     <div class="navbar">
             <ul>
-            <li><a href="#about-anchor">About</a></li>
-            <li><a href="#food-anchor">Food</a></li>
-            <li><a href="#shows-anchor">Shows</a></li>            </ul>
+                <li><a href="#about-anchor">About</a></li>
+                <li><a href="#food-anchor">Food</a></li>
+                <li><a href="#shows-anchor">Shows</a></li>   
+                <li><a href="#gallery-anchor">Gallery</a></li>         
+            
+            </ul>
     </div>
     <header>
         <h1>Raysha's Website</h1>
@@ -68,10 +71,22 @@
             <p>This is section 6 content.</p>
             <p>More content can be added here.</p>
         </div>
+        <!-- Photo Gallery Section -->
+        <div id="gallery-anchor"></div>
         <div class="section-box">
-            <h2 id="section7">Section 7</h2>
-            <p>This is section 7 content.</p>
-            <p>More content can be added here.</p>
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="assets/images/photo1.jpg" alt="Photo 1" class="gallery-item" data-theme="nature">
+                <img src="assets/images/photo2.jpg" alt="Photo 2" class="gallery-item" data-theme="city">
+                <img src="assets/images/photo3.jpg" alt="Photo 3" class="gallery-item" data-theme="abstract">
+            </div>
+        </div>
+
+        <!-- Modal for Enlarged Photo -->
+        <div id="photo-modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image">
+            
         </div>
 
         
